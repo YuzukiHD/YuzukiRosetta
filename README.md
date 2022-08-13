@@ -21,7 +21,16 @@ Allwinner’s R328-S3 is a highly integrated dual-core SoC targeted for audio ap
 
 ## Development
 
-Coming soon..
+Tina Linux SDK: 
+
+```
+source build/envsetup.sh
+lunch r328s3_rosetta-tina
+make kernel_menuconfig
+# exit menuconfig
+make -j128 
+pack
+```
 
 ## Flash Firmware
 

@@ -24,10 +24,14 @@ Allwinner’s R328-S3 is a highly integrated dual-core SoC targeted for audio ap
 Tina Linux SDK: 
 
 ```
+# Prepare the basic environment
 source build/envsetup.sh
 lunch r328s3_rosetta-tina
+
+# Apply Kernel Profile
 make kernel_menuconfig
-# exit menuconfig
+
+# exit menuconfig and make
 make -j128 
 pack
 ```

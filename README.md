@@ -37,7 +37,7 @@ lunch r328s3_rosetta-tina
 make kernel_menuconfig
 
 # exit menuconfig and make
-make -j128 
+make -j65535
 pack
 ```
 

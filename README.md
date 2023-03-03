@@ -27,7 +27,7 @@ Tina Linux SDK: https://pan.baidu.com/s/1DJY20uzQbFdHe0gusl1-7w?pwd=xlpl
 
 ```
 # Package
-sudo apt-get install build-essential subversion git-core libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip lib32z1 lib32z1-dev lib32stdc++6 libstdc++6 install libc6:i386 libstdc++6:i386 lib32ncurses5 lib32z1 -y
+sudo apt-get install build-essential subversion git-core libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip lib32z1 lib32z1-dev lib32stdc++6 libstdc++6 libc6:i386 libstdc++6:i386 lib32ncurses5 lib32z1 -y
 
 # Prepare the basic environment
 source build/envsetup.sh
@@ -37,7 +37,7 @@ lunch r328s3_rosetta-tina
 make kernel_menuconfig
 
 # exit menuconfig and make
-make -j128 
+make -j65535
 pack
 ```
 
